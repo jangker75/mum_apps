@@ -29,7 +29,8 @@
 						$resp['nik'] = $a->nik;
 						$resp['nama'] = $a->nama;
 						$resp['nikhash'] = $nikhash;
-						$resp['foto']=strval(CRUDBooster::getSetting('home_path').$a->foto);
+						$resp['foto']=strval(url('/').'/'.$a->foto);
+						// $resp['foto']=strval(CRUDBooster::getSetting('home_path').$a->foto);
 					DB::table('user')->where('nik',$a->nik)->update(['nikhash'=>$nikhash]);
 					response()->json($resp)->send();
 					exit;

@@ -1,1 +1,0 @@
-<a href='mailto:<?php echo e($value); ?>' target="_blank"><?php echo e($value); ?></a>

@@ -1,1 +1,0 @@
-<?php echo e(date("F, d Y", strtotime($value))); ?>

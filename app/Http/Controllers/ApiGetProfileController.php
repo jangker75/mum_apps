@@ -25,7 +25,8 @@
 					$data['nik'] = $user->nik;
 					$data['gender'] = $user->gender;
 					$data['alamat'] = $user->alamat;
-					$data['foto'] = strval(CRUDBooster::getSetting('home_path').$user->foto);
+					$data['foto']=strval(url('/').'/'.$user->foto);
+					// $data['foto'] = strval(CRUDBooster::getSetting('home_path').$user->foto);
 					$data['provinsi_id'] = $user->provinsi_id;
 					$data['kota_id'] = $user->kota_id;
 					$data['kecamatan_id'] = $user->kecamatan_id;
